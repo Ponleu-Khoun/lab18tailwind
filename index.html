@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal University of Phnom Penh</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-900 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">RUPP</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-blue-300">Home</a></li>
+                    <li><a href="./program.html" class="hover:text-blue-300">Programs</a></li>
+                    <li><a href="./contact.html" class="hover:text-blue-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-24">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold">Welcome to the Royal University of Phnom Penh</h2>
+            <p class="mt-4 text-lg">Empowering Future Leaders through Quality Education</p>
+            <a href="#" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Explore Programs</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold text-center">About Us</h3>
+            <p class="mt-4 text-gray-700 text-center max-w-2xl mx-auto">
+                The Royal University of Phnom Penh is Cambodia's oldest and largest university, dedicated to providing quality education and fostering research opportunities.
+            </p>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="bg-gray-200 py-20">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold text-center">Our Programs</h3>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="IT.jpg" alt="Bachelor of Science" class="w-full h-32 object-cover rounded-t-lg">
+                    <h4 class="text-xl font-bold mt-4">Bachelor of Science</h4>
+                    <p class="mt-2 text-gray-600">Explore various scientific disciplines and enhance your research skills.</p>
+                    <button class="mt-4 text-blue-600" onclick="toggleVisibility('bsc-info')  "><a href="./Bachelor-of-Science.html">See More</a></button>
+                    <p id="bsc-info" class="hidden mt-2 text-gray-600">
+                        This program covers biology, chemistry, physics, and mathematics, providing a comprehensive understanding of scientific principles and research methodologies. 
+                        Students will engage in hands-on experiments, field studies, and collaborative projects that foster critical thinking and problem-solving skills. 
+                        Graduates will be well-prepared for careers in research, healthcare, environmental science, and education. 
+                        Additionally, the program emphasizes the importance of ethics in science, encouraging students to consider the broader implications of their work. 
+                        With access to state-of-the-art laboratories and research facilities, students can explore their interests and contribute to meaningful scientific advancements.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="art.jpg" alt="Bachelor of Arts" class="w-full h-32 object-cover rounded-t-lg">
+                    <h4 class="text-xl font-bold mt-4">Bachelor of Arts</h4>
+                    <p class="mt-2 text-gray-600">Dive into humanities and social sciences for a deeper understanding of society.</p>
+                    <button class="mt-4 text-blue-600" onclick="toggleVisibility('ba-info')"><a href="./Bachelor-of-Arts.html">See More</a></button>
+                    <p id="ba-info" class="hidden mt-2 text-gray-600">
+                        This program emphasizes critical thinking, creativity, and communication skills, preparing students for diverse career paths in arts and social sciences. 
+                        Courses may include literature, history, philosophy, and sociology, allowing students to explore the human experience from multiple perspectives. 
+                        Graduates often pursue careers in education, public policy, media, and non-profit organizations. 
+                        The program also encourages community engagement and social responsibility, providing students with opportunities to apply their knowledge in real-world contexts. 
+                        Through internships and volunteer work, students can develop a strong professional network and gain practical experience that complements their academic studies.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="cp.jpg" alt="Information Technology" class="w-full h-32 object-cover rounded-t-lg">
+                    <h4 class="text-xl font-bold mt-4">Information Technology</h4>
+                    <p class="mt-2 text-gray-600">Gain practical skills in IT and prepare for a tech-driven world.</p>
+                    <button class="mt-4 text-blue-600" onclick="toggleVisibility('it-info')"><a href="./Information-Technology.html">See More</a></button>
+                    <p id="it-info" class="hidden mt-2 text-gray-600">
+                        The IT program focuses on software development, networking, and cybersecurity, equipping students with the skills needed in the modern workforce. 
+                        Students will learn to design, implement, and manage technology solutions that solve real-world problems. 
+                        Opportunities for internships and hands-on projects ensure that graduates are job-ready and capable of adapting to the ever-changing tech landscape. 
+                        The curriculum also includes emerging technologies such as artificial intelligence, data analytics, and cloud computing, preparing students for future innovations. 
+                        With a strong emphasis on teamwork and communication, students will develop the interpersonal skills necessary to thrive in collaborative environments.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="business.jpg" alt="Business Administration" class="w-full h-32 object-cover rounded-t-lg">
+                    <h4 class="text-xl font-bold mt-4">Business Administration</h4>
+                    <p class="mt-2 text-gray-600">Learn the fundamentals.</p>
+                    <button class="mt-4 text-blue-600" onclick="toggleVisibility('it-info')"><a href="./Business-Administration.html">See More</a></button>
+                    <p id="it-info" class="hidden mt-2 text-gray-600">
